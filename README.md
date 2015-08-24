@@ -38,7 +38,7 @@ Canonical example of an immutable type:
     let immutable_type = new ImmutableType('my_property1', undefined)
     
 
-Frozen properties can only read, and set once:
+Frozen properties can only be read, and set once:
     
     let immutable_type = new ImmutableType('my_property1', true)
     
