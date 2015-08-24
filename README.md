@@ -19,12 +19,11 @@ Via [NPM](https://www.npmjs.com/package/frosty).
 
 ## Usage
 
-Creating an immutable type:
+Canonical example of an immutable type:
 
     import frosty from 'frosty'
 
     class ImmutableType {
-      
       constructor(property1, property2) {
         this.property1 = property1
         this.property2 = property2
@@ -35,7 +34,7 @@ Creating an immutable type:
     
 `undefined` isn't a valid value for a frozen property:
     
-    // throws 'property2' should be defined 
+    // throws "'property2' should be defined" 
     let immutable_type = new ImmutableType('my_property1', undefined)
     
 
@@ -44,7 +43,7 @@ Frozen properties can only read, and set once:
     let immutable_type = new ImmutableType('my_property1', true)
     
     immutable_type.property1 // 'my_property1'
-    immutable_type.property1 = 'another_property1' // throws 'my_property1' is immutable
+    immutable_type.property1 = 'another_property1' // "throws 'my_property1' is immutable"
  
 ## Development
 
