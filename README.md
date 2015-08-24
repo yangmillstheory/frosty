@@ -4,7 +4,7 @@
 
 ## Introduction
 
-This [node](https://nodejs.org/) module facilitates defining properties on objects that 
+This [node module](https://www.npmjs.com/package/frosty) facilitates defining properties on objects that 
 can be set to a defined value just once. 
 
 Setting them again to a defined value (even if the same) raises an error.
@@ -13,6 +13,8 @@ It abstracts away the boilerplate of building immutable data structures.
 
 
 ## Install
+
+Via [NPM](https://www.npmjs.com/package/frosty).
 
 `npm install {--save, --save-dev} frosty`
 
