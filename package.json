@@ -4,7 +4,8 @@
   "description": "Frozen attributes in JavaScript",
   "main": "index.js",
   "scripts": {
-    "test": "./test.js ./**/*.spec.js | node_modules/.bin/faucet"
+    "test": "./test.js ./**/*.spec.js | node_modules/.bin/faucet",
+    "prepublish": "gulp build"
   },
   "repository": {
     "type": "git",
@@ -18,7 +19,10 @@
     "es6",
     "babel",
     "property",
-    "properties"
+    "properties",
+    "gulp",
+    "gulpfriendly",
+    "npm"
   ],
   "author": "Victor Alvarez",
   "license": "MIT",
@@ -35,5 +39,21 @@
     "gulp-babel": "^5.2.1",
     "gulp-rename": "^1.2.2",
     "tape": "^4.2.0"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "LICENSE.md",
+    "CHANGELOG.md"
+  ],
+  "license": {
+    "type": "MIT",
+    "url": "http://opensource.org/licenses/MIT"
+  },
+  "bugs": {
+    "url": "https://github.com/yangmillstheory/mixin.a.lot/issues"
   }
 }
