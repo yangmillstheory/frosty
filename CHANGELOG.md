@@ -4,8 +4,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [1.0.1 - 1.0.4] - 2015-08-23
 ### Changed
-Changes in README.
+Changes in `README.md`.
 
 ## [1.0.1] - 2015-08-23
 ### Changed
-Initial release. Fix markdown formatting in `REAMDE.md`. Adding [TravisCI](https://travis-ci.org/) integration. 
+Initial release. Fix markdown formatting in `README.md`. Adding [TravisCI](https://travis-ci.org/) integration. 
