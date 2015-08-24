@@ -9,7 +9,7 @@
 
 Reusable building block that facilitates defining properties on objects that can be set to a defined value just once.
 
-Setting such properties again to a defined value (even if it's the same as the existing value) raises an error.
+Setting such properties again to a defined value (even if it's the same as the existing value) raises an error, unlike in standard JavaScript.
 
 It abstracts away the boilerplate of building immutable data structures.
 
