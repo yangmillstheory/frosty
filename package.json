@@ -25,7 +25,10 @@
     "npm"
   ],
   "author": "Victor Alvarez",
-  "license": "MIT",
+  "license": {
+    "type": "MIT",
+    "url": "http://opensource.org/licenses/MIT"
+  },
   "bugs": {
     "url": "https://github.com/yangmillstheory/frosty/issues"
   },
@@ -33,28 +36,32 @@
   "devDependencies": {
     "babel": "^5.8.21",
     "babel-core": "^5.8.22",
+    "browserify": "^11.0.1",
     "faucet": "0.0.1",
     "glob": "^5.0.14",
     "gulp": "git://github.com/gulpjs/gulp.git#4.0",
     "gulp-babel": "^5.2.1",
     "gulp-rename": "^1.2.2",
-    "tape": "^4.2.0"
+    "tape": "^4.2.0",
+    "testling": "^1.7.1"
+  },
+  "testling": {
+    "files": "./**/*.spec.js",
+    "browsers": [
+      "ie/6..latest",
+      "chrome/22..latest",
+      "firefox/16..latest",
+      "safari/latest",
+      "opera/11.0..latest"
+    ]
   },
   "engines": {
     "node": ">=0.10.0"
   },
-  "main": "index.js",
   "files": [
     "index.js",
     "LICENSE.md",
     "README.md",
     "CHANGELOG.md"
-  ],
-  "license": {
-    "type": "MIT",
-    "url": "http://opensource.org/licenses/MIT"
-  },
-  "bugs": {
-    "url": "https://github.com/yangmillstheory/frosty/issues"
-  }
+  ]
 }
