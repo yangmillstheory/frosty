@@ -1,6 +1,7 @@
 # frosty
 
 [![Build Status](https://travis-ci.org/yangmillstheory/frosty.svg?branch=master)](https://travis-ci.org/yangmillstheory/mixin.a.lot)
+
 [![Browser Support](https://ci.testling.com/yangmillstheory/frosty.png)
 ](https://ci.testling.com/yangmillstheory/frosty)
 
