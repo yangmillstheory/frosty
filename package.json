@@ -1,0 +1,39 @@
+{
+  "name": "frosty",
+  "version": "1.0.0",
+  "description": "Frozen attributes in JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "./test.js ./**/*.spec.js | node_modules/.bin/faucet"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yangmillstheory/frosty.git"
+  },
+  "keywords": [
+    "immutable",
+    "javascript",
+    "freeze",
+    "frozen",
+    "es6",
+    "babel",
+    "property",
+    "properties"
+  ],
+  "author": "Victor Alvarez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yangmillstheory/frosty/issues"
+  },
+  "homepage": "https://github.com/yangmillstheory/frosty",
+  "devDependencies": {
+    "babel": "^5.8.21",
+    "babel-core": "^5.8.22",
+    "faucet": "0.0.1",
+    "glob": "^5.0.14",
+    "gulp": "git://github.com/gulpjs/gulp.git#4.0",
+    "gulp-babel": "^5.2.1",
+    "gulp-rename": "^1.2.2",
+    "tape": "^4.2.0"
+  }
+}
