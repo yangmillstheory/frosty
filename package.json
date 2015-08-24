@@ -1,6 +1,6 @@
 {
   "name": "frosty",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Frozen attributes in JavaScript",
   "main": "index.js",
   "scripts": {
