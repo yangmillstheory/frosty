@@ -1,5 +1,7 @@
 # frosty
 
+[![Build Status](https://travis-ci.org/yangmillstheory/frosty.svg?branch=master)](https://travis-ci.org/yangmillstheory/mixin.a.lot)
+
 ## Introduction
 
 This [node](https://nodejs.org/) module facilitates defining properties on objects that 
@@ -12,7 +14,7 @@ It abstracts away the boilerplate of building immutable data structures.
 
 ## Install
 
-`npm install frosty`
+`npm install {--save, --save-dev} frosty`
 
 ## Usage
 
@@ -49,12 +51,12 @@ In [ES6 & Babel](http://babeljs.io/).
 
 Transpile:
  
-   $ node_modules/.bin/gulp build
+    $ node_modules/.bin/gulp build
    
 Test:
 
-   $ sudo chmod +x test.js
-   $ npm test
+    $ sudo chmod +x test.js
+    $ npm test
       
 ## LICENSE
 
