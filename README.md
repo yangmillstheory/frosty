@@ -47,6 +47,9 @@ Frozen properties can only be read, and set once:
 
     immutable_type.property1 // 'my_property1'
     immutable_type.property1 = 'another_property1' // "throws 'my_property1' is immutable"
+    
+
+See the [tests](https://github.com/yangmillstheory/frosty/blob/master/src/frosty.spec.js) for more examples.
 
 ## Development
 
