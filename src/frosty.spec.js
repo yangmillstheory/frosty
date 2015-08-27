@@ -11,6 +11,15 @@ test('should create the property', t => {
   t.end()
 });
 
+test('should overwrite existing properties', t => {
+  let obj = {}; obj[TEST_PROPERTY] = true;
+  obj = frosty.freeze(obj, TEST_PROPERTY);
+
+  t.ok(obj.hasOwnProperty(TEST_PROPERTY));
+  t.equals(obj[TEST_PROPERTY], undefined);
+  t.end()
+});
+
 test('should initialize the property to undefined', t => {
   let obj = frosty.freeze({}, TEST_PROPERTY);
 
