@@ -91,3 +91,21 @@ test('should freeze multiple properties', t => {
   }
   t.end()
 });
+
+test('should support immutable classes', t => {
+  class ImmutableType {
+    constructor(attribute) {
+      this.attribute = attribute
+    }
+  }
+
+  frosty.freeze(ImmutableType.prototype, 'attribute');
+
+  let i = new ImmutableType('immutable');
+
+  t.equals(i.attribute, 'immutable');
+  t.throws(() => {
+    i.attribute = 'mutable?'
+  }, /attribute is immutable/);
+  t.end()
+});
