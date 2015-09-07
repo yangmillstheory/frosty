@@ -101,11 +101,17 @@ test('should support immutable classes', t => {
 
   frosty.freeze(ImmutableType.prototype, 'attribute');
 
-  let i = new ImmutableType('immutable');
+  let i = new ImmutableType('immutable1');
+  let j = new ImmutableType('immutable2');
 
-  t.equals(i.attribute, 'immutable');
+  t.equals(i.attribute, 'immutable1');
+  t.equals(j.attribute, 'immutable2');
+
   t.throws(() => {
     i.attribute = 'mutable?'
+  }, /attribute is immutable/);
+  t.throws(() => {
+    j.attribute = 'mutable?'
   }, /attribute is immutable/);
   t.end()
 });
