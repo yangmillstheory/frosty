@@ -1,10 +1,10 @@
 let immutable_descriptor_set = property => {
   let privatized = Symbol(property);
-  let UNINITIALIZED = undefined;
+  let UNSET = undefined;
 
   return {
     [privatized]: {
-      value: UNINITIALIZED,
+      value: UNSET,
       writable: true
     },
 
@@ -14,9 +14,9 @@ let immutable_descriptor_set = property => {
         return this[privatized];
       },
       set(value) {
-        if (this[privatized] !== UNINITIALIZED) {
+        if (this[privatized] !== UNSET) {
           throw new Error(`${property} is immutable`)
-        } else if (value === UNINITIALIZED) {
+        } else if (value === UNSET) {
           throw new Error(`${property} should be defined`)
         }
         this[privatized] = value
