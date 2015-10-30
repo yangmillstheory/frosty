@@ -7,11 +7,10 @@
 
 ## Introduction
 
-Reusable building block that facilitates defining properties on objects that can be set to a defined value just once.
+Define ***frozen*** properties on objects:
 
-Setting such properties again to a defined value (even if it's the same as the existing value) raises an error, unlike in standard JavaScript.
-
-It abstracts away the boilerplate of building immutable data structures.
+  - a frozen property can be set to an non-`undefined` value just once
+  - any further attempts to change its value will throw an `Error`
 
 
 ## Install
